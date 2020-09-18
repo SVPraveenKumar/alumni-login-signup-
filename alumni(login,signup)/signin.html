@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Sign in</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="favicon.jpg"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+
+<body>
+  <script>
+      
+        function validateForm() {
+                  var a = document.forms["myForm"]["username"].value;
+                  var b = document.forms["myForm"]["pass"].value;
+              
+         
+        
+
+                  if (a == "") {
+                     alert("UserName must be filled out");
+                     return false;
+                     } 
+                       
+                       
+                     
+                     
+                   
+                     
+                     
+}
+    </script>  
+
+<div class="login-wrap">
+
+	<div class="login-html">
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign In</label>
+
+		<div class="login-form">
+                   
+<form name="myForm"  onsubmit="return validateForm()" method="post">  
+
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input" name="username" pattern="[a-z]{0-10}-[A-Z]{0-10}-[0-9]{0-10}" required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password" name="pass" pattern="[a-z]{0-10}-[A-Z]{0-10}-[0-9]{0-10}" required>
+				</div>
+				
+				
+				<div class="group">
+					<input type="submit" class="button" value="Sign In"  >
+				</div>
+					
+				<div class="hr"></div>
+
+				<div class="foot-lnk">
+<label for="tab-1"><a href="signup.html" style="font-size:20px;">Sign Up</a><br><br>
+					<label for="tab-1"><a href="https://jaswanthreddy27.github.io/CseAlumni/alumni/index.html" style="font-size:20px;">===HOME===</a></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</form>
+</body>
+</html>
